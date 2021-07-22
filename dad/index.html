@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"><link rel="stylesheet" href="style.css">
+    <title></title>
+    </head>
+  <body>
+    <nav>
+      <div class="img-flex">
+        <img src="https://techcrunch.com/wp-content/uploads/2018/07/logo-2.png?w=300">
+      </div>
+      <div class="hamburger-flex">
+        <a><img onclick="myFunction()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"></a>
+      </div>
+      <div class="links-flex">
+        <div class="links-flex-item"><a href="#home">Home</a></div>
+        <div class="links-flex-item"><a href="#news">News</a></div>
+        <div class="links-flex-item"><a href="#contact">Contact</a></div>
+        <div class="links-flex-item"><a href="#about">About</a></div>
+      </div>
+    </nav>
+    <div id ='uk' class="mobile-nav">
+      <div class="links-flex-item"><a href="#home">Home</a></div>
+      <div class="links-flex-item"><a href="#news">News</a></div>
+      <div class="links-flex-item"><a href="#contact">Contact</a></div>
+      <div class="links-flex-item"><a href="#about">About</a></div>
+    </div>
+    <div class="yep2"></div>
+    <div class="yep">
+      <p>2</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(window).resize(function() {
+        if (window.innerWidth>1100){
+            var x = document.getElementById("uk");
+            x.style.display = "none";
+        }
+      });
+      function myFunction(){
+        var x = document.getElementById("uk");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+    </script>
+  </body>
+</html>
